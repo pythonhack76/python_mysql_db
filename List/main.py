@@ -48,7 +48,7 @@ if "roma" in z:
     print(zed)
 
 
-elenco_citta = ("torino","milano","roma","venezia","firenze")
+elenco_citta = ("torino","milano","roma","venezia","firenze","torino")
 
 (x, y, *z) = elenco_citta
 
@@ -69,5 +69,9 @@ i = 0
 while i < len(elenco_citta):
     print(elenco_citta)
     i += 1
+
+
+x = elenco_citta.index("torino")
+print(x)
 
 
