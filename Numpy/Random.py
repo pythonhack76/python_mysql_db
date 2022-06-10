@@ -12,7 +12,7 @@ values = np.array([10, 23, 21, 43, 54])
 probability = np.array([0.1, 0.2, 0.2, 0.3, 0.2])
 arrChoice = random.choice(values, p=probability, size=(20))
 
-random.shuffle(values)
+#random.shuffle(values)
 
 arr2 = random.permutation(values)
 
