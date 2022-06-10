@@ -1,4 +1,5 @@
 #gestione dei files
+import os
 
 def creaFile():
     global file
@@ -13,5 +14,18 @@ def leggiFile():
     f.close() 
 
 
-creaFile()
-leggiFile() 
+def leggiFiles():
+    select_dir = input("indica tu la directory...")
+    if select_dir != True:
+        current_directory = os.getcwd()
+        files = os.listdir(current_directory)
+        for filename in files:
+            print(filename)
+    else:
+        files = os.listdir(select_dir)
+        for filename in files:
+            print(filename)
+        
+
+
+leggiFiles() 
