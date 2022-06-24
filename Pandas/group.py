@@ -1,5 +1,7 @@
 import pandas as pd
 
+#conteggio, min e max, count, mean count
+
 df = pd.read_csv('starwars.csv')
 
 types = df.groupby(['gender','species'])
